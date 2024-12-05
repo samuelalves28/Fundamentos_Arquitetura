@@ -5,7 +5,7 @@ using infrastructure.Base.Implementations.Interfaces;
 
 namespace API.Injections;
 
-public static class Injections
+public static class DependencyInjectionConfiguration
 {
     public static IServiceCollection AddRepositoryInjections(this IServiceCollection services)
     {
