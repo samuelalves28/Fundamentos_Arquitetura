@@ -1,7 +1,9 @@
 ﻿namespace OOP.Clssse_X_Objeto;
 
 
-// Definicação de classe, ela te o objetivo de mapear um objeto do mundo real.
+/// <summary>
+/// Definicação de classe, ela te o objetivo de mapear um objeto do mundo real.
+/// </summary>
 
 public class Casa
 {
@@ -13,7 +15,9 @@ public class Casa
 
 public class Objeto
 {
-    // E quando você instancia ela na memoria, no código. Um objeto e quando você traz aquela classe para a realidade do código.
+    /// <summary>
+    /// E quando você instancia ela na memoria, no código. Um objeto e quando você traz aquela classe para a realidade do código.
+    /// </summary>
     public Objeto()
     {
         var casa = new Casa
