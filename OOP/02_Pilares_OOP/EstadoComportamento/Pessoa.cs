@@ -1,9 +1,9 @@
-﻿namespace OOP._02___Pilares_OOP;
+﻿namespace OOP._02_Pilares_OOP.EstadoComportamento;
 
 /// <summary>
 /// Estado e entender que as propriedades da classe possui informações, já o comportamento são métodos que processa uma informação.
 /// </summary>
-public class Pessoa_EstadoComportamento
+public class Pessoa
 {
     /// <summary>
     /// Isso aqui é estado são as propriedades da própria classe. E quando você tem os dados está armazenado na classe.
