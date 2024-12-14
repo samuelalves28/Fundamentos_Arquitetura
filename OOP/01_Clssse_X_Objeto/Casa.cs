@@ -2,7 +2,7 @@
 
 
 /// <summary>
-/// Definicação de classe, ela te o objetivo de mapear um objeto do mundo real.
+/// Definicação de classe, ela tem o objetivo de mapear um objeto do mundo real.
 /// </summary>
 
 public class Casa
@@ -20,7 +20,7 @@ public class Objeto
     /// </summary>
     public Objeto()
     {
-        var casa = new Casa
+        Casa casa = new()
         {
             TamanhoM2 = 1,
             Andares = 1,

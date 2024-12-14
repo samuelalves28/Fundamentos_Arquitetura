@@ -6,15 +6,15 @@
 public class Pessoa
 {
     /// <summary>
-    /// Isso aqui é estado são as propriedades da própria classe. E quando você tem os dados está armazenado na classe.
+    /// Isso aqui representa o estado, ou seja, as propriedades da própria classe. O estado refere-se aos dados que estão armazenados e gerenciados internamente pela classe.
     /// </summary>
     public string Nome { get; set; }
     public DateTime DataNascimento { get; set; }
 
 
     /// <summary>
-    /// E quando você tem uma ação dentro da classe, isso quer dizer que é um comportamento. Não necessariamente temos que retonar pode fazer
-    /// com que ele simplemente altere uma informação, como é mostrado no exemplo 2.
+    /// Quando você define uma ação dentro de uma classe, isso representa um comportamento. Um comportamento não precisa necessariamente retornar um valor; ele pode 
+    /// simplesmente executar uma tarefa ou alterar o estado da classe, como demonstrado no exemplo 2.
     /// </summary>
     public int CalcularIdade()
     {

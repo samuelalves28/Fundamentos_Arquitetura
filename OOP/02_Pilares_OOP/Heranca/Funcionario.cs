@@ -34,7 +34,7 @@ public class Funcionario : Pessoa
 
     public void Create()
     {
-        var newFuncionario = new Funcionario
+        Funcionario newFuncionario = new()
         {
             Nome = "João de Almeida",
             DataNascimento = Convert.ToDateTime(value: "1999/01/15"),
