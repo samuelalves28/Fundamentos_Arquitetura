@@ -4,7 +4,6 @@
 /// <summary>
 /// Definicação de classe, ela tem o objetivo de mapear um objeto do mundo real.
 /// </summary>
-
 public class Casa
 {
     public int TamanhoM2 { get; set; }

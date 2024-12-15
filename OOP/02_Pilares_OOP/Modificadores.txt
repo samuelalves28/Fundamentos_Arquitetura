@@ -1,0 +1,10 @@
+﻿Os modificadores de acesso em C# são utilizados para definir o nível de visibilidade e restrição de acesso aos membros de uma classe. Abaixo, estão os principais modificadores de acesso, explicados em forma de texto:
+
+- Public: O acesso é irrestrito, permitindo que qualquer código de qualquer lugar possa acessar o membro ou tipo marcado como public.
+- Protected: O acesso é limitado à própria classe que contém o membro ou aos tipos derivados dessa classe. É útil para permitir a reutilização e extensão do código em classes filhas.
+- Internal: O acesso é restrito ao assembly atual, ou seja, os membros ou tipos marcados como internal só podem ser acessados por códigos que estão no mesmo projeto compilado.
+- Protected Internal: Combina os modificadores protected e internal. O acesso é permitido tanto dentro do mesmo assembly quanto para tipos derivados da classe, mesmo que estejam em outro assembly.
+- Private: O acesso é restrito ao tipo que contém o membro. Apenas o código dentro da própria classe pode acessar os membros marcados como private.
+- Private Protected: Disponível a partir do C# 7.2, combina private e protected. O acesso é restrito à classe que contém o membro ou aos tipos derivados dessa classe, mas apenas dentro do mesmo assembly.
+
+Esses modificadores ajudam a implementar o encapsulamento, garantindo que apenas as partes necessárias de um código sejam expostas, enquanto outras permanecem protegidas ou acessíveis de maneira controlada.
