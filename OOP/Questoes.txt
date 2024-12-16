@@ -1,0 +1,28 @@
+﻿Qual a resposta mais adequada sobre o uso correto da Herança?
+- Possibilitar a existência de "Super Tipos" para que sejam estendidos e derivados pelas classes que herdarem deles.
+É necessário aplicar a regra "É um..." para validar se uma classe deve herdar de outra.
+
+
+Escolha a resposta correta sobre Classes e Métodos abstratos:
+- Classes Abstratas não podem ser instanciadas
+- Métodos Abstratos não possuem implementação
+- Classes Abstratas podem implementar comportamentos porém podem ser sobrescritos
+- Métodos Abstratos precisam obrigatoriamente serem sobrescritos com "override"
+- Classes Abstratas podem possuir estado e comportamento (ex processar regras de negócio)
+- Métodos Abstratos são obrigatoriamente implementados na classe herdada e podem possuir comportamentos diferentes em cada implementação
+
+
+Qual das respostas abaixo NÃO está correta?
+- A utilização de classes ou métodos genéricos não é aceita como uma forma de polimorfismo.
+
+
+Se uma classe do assembly ProjetoA herdar de uma classe do assembly ProjetoB: Quais tipos de métodos estarão visíveis para a classe do assembly ProjetoA?
+- public
+- protected
+- protected internal
+
+
+Escolha a resposta que está 100% correta!
+- Devemos buscar o baixo Acoplamento e uma alta Coesão em nossas classes.
+- Prefira sempre o uso de Interfaces ao invés de uma Implementação.
+- Prefira sempre o uso de Composição ao invés de Herança. 
