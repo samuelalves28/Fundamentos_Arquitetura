@@ -1,6 +1,5 @@
 ﻿using API.Controllers.CadUsuario.ViewModel;
 using API.Implementations.Interfaces;
-using API.Implementations.Repositories;
 using infrastructure.Utils;
 using Microsoft.AspNetCore.Mvc;
 
