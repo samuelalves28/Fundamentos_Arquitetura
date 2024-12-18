@@ -3,6 +3,7 @@ using infrastructure.Base.Model;
 using infrastructure.Data;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
+using MongoDB.Driver.Linq;
 
 namespace infrastructure.Base.Implementations.Repositories;
 
@@ -10,23 +11,29 @@ public abstract class BaseRepository<TModel> : IBaseRepository<TModel> where TMo
 {
     public BaseRepository(IOptions<DataBaseSettings> DatabaseSettings)
     {
-        var mongoClient = new MongoClient(DatabaseSettings.Value.ConnectionString);
+        var collectionName = nameof(TModel);
+        var mongoClient = new MongoClient(DatabaseSettings.Value.ConnectionString)
+            .GetDatabase(DatabaseSettings.Value.DatabaseName);
 
-        var mongoDatabase = mongoClient.GetDatabase(DatabaseSettings.Value.DatabaseName);
-        var CollectionName = typeof(TModel).Name;
-
-        Query = mongoDatabase.GetCollection<TModel>(CollectionName);
+        _collection = mongoClient.GetCollection<TModel>(collectionName);
+        Query = _collection.AsQueryable();
     }
 
-    public readonly IMongoCollection<TModel> Query;
+    protected readonly IQueryable<TModel> Query;
+    protected readonly IMongoCollection<TModel> _collection;
 
-    public async Task<List<TModel>> GetAsync() => await Query.Find(w => true).ToListAsync();
+    public async Task<List<TModel>> GetAsync(CancellationToken cancellationToken)
+        => await Query.ToListAsync(cancellationToken);
 
-    public async Task<TModel?> GetAsync(Guid id) => await Query.Find(x => x.Id == id).FirstOrDefaultAsync();
+    public async Task<TModel?> GetAsync(Guid id, CancellationToken cancellationToken)
+        => await Query.SingleAsync(w => w.Id == id, cancellationToken);
 
-    public async Task CreateAsync(TModel newItem) => await Query.InsertOneAsync(newItem);
+    public async Task CreateAsync(TModel newItem, CancellationToken cancellationToken)
+        => await _collection.InsertOneAsync(newItem, cancellationToken: cancellationToken);
 
-    public async Task UpdateAsync(Guid id, TModel updatedItem) => await Query.ReplaceOneAsync(x => x.Id == id, updatedItem);
+    public async Task UpdateAsync(Guid id, TModel updatedItem, CancellationToken cancellationToken)
+        => await _collection.ReplaceOneAsync(w => w.Id == id, updatedItem, cancellationToken: cancellationToken);
 
-    public async Task DeleteAsync(Guid id) => await Query.DeleteOneAsync(x => x.Id == id);
+    public async Task DeleteAsync(Guid id, CancellationToken cancellationToken)
+        => await _collection.DeleteOneAsync(w => w.Id == id, cancellationToken: cancellationToken);
 }

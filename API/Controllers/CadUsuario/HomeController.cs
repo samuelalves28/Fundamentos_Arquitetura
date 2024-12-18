@@ -8,7 +8,7 @@ namespace API.Controllers.CadUsuario;
 public class HomeController(ILogger<HomeController> logger, ICadUsuarioRepository cadUsuarioRepository) : ControllerBase
 {
     [HttpGet("buscar")]
-    public async Task<IActionResult> GetUsuariosAsync()
+    public async Task<IActionResult> GetUsuariosAsync(CancellationToken cancellationToken)
     {
         var users = await cadUsuarioRepository.GetAsync();
         return Ok(users);
