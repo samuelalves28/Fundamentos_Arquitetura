@@ -17,11 +17,12 @@ Os principios SOLID devem ser aplicados para se obter os benefícios da programa
 dificuldade de adaptação e manutenção caso seja nescessario. 
 - Seja testável e facil entendimento, pois a maior parte do tempo de desenvolvimento é gasto em manutenção e correção de bugs.
 - Seja extensível para alterações com o menor esforço possivel.
-- Que forneça o máximo de reaproveitamento de código, pois a reutilização de código é um dos principais objetivos da programação orientada a objetos.
+- Que forneça o máximo de reaproveitamento de código, pois a reutilização de código é um dos principais objetivos da programação 
+orientada a objetos.
 - Que permaneça o máximo de tempo possível em utilização.
 
-Com isso se torne mais facil de se manter, adaptar, entender e ajustar. Temos que ter o objetivo em mente de que o código tem que ser legivel, e ser bem 
-escrita para que se tiver a necessidade de mudanças e correções, seja facil de se fazer.
+Com isso se torne mais facil de se manter, adaptar, entender e ajustar. Temos que ter o objetivo em mente de que o código tem que ser
+legivel, e ser bem escrita para que se tiver a necessidade de mudanças e correções, seja facil de se fazer.
 
 O que os princípios do SOLID fazem para nos ajudar a evitar problemas comuns:
 - Dificuldade na testabilidade e criação de testes unitários. Se o código for bem escrito, ele será facil de se testar.
@@ -29,7 +30,6 @@ O que os princípios do SOLID fazem para nos ajudar a evitar problemas comuns:
 - Dificuldade de isolar e reutilizar funcionalidades.
 - Duplicação de código, aonde a mesma funcionalidade é implementada em varios lugares.
 - Fragilidade, o código quebra facilmente em vários pontos após alguma alteração.
-
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
