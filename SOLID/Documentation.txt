@@ -1,9 +1,10 @@
 ﻿Solid é um acrônimo para os cinco princípios da programação orientada a objetos e design de código. 
 
-S -> Single Responsibility Principle (SRP): Uma classe deve ter um, e somente um, motivo para ser modificada. Então, uma classe deve ter apenas 
-uma responsabilidade. Pois a gente tem um poruqe dela existir, e ela deve fazer apenas isso.
+S -> Single Responsibility Principle (SRP): Uma classe deve ter um, e somente um, motivo para ser modificada. Então, 
+uma classe deve ter apenas uma responsabilidade. Pois a gente tem um poruqe dela existir, e ela deve fazer apenas isso.
 
-O -> Open/Closed Principle: 
+O -> Open/Closed Principle (OCP): Entidades de software(clsses, módulos, funções, etc) devem estar abertas para extensão, 
+mas fechadas para modificação. Por exemplo usar métodos publicos.
 
 L -> Liskov Substitution Principle:
 
@@ -28,3 +29,18 @@ O que os princípios do SOLID fazem para nos ajudar a evitar problemas comuns:
 - Dificuldade de isolar e reutilizar funcionalidades.
 - Duplicação de código, aonde a mesma funcionalidade é implementada em varios lugares.
 - Fragilidade, o código quebra facilmente em vários pontos após alguma alteração.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+QUESSÃO 1: Qual alternativa NÃO está correta em relação ao SRP?
+
+O SRP afirma que uma classe deve ter uma única razão para mudar, ou seja, ela deve ser responsável apenas por uma parte 
+específica da funcionalidade de um sistema. Isso não significa que a classe tenha apenas um método, mas que todos os métodos
+e funcionalidades dentro dela devem estar relacionados à mesma responsabilidade.
+
+QUESSÃO 2: Como é possível aplicar o conceito de Open/Closed em uma classe?
+
+- Utilizando Extension Methods em classes independentes.
+- Criando super classes abstratas que são herdadas e especializadas pelas demais.
+- Fazendo uso de herança, abstração, encapsulamento e polimorfismo.

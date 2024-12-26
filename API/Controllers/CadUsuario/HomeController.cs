@@ -10,12 +10,12 @@ public class HomeController(ILogger<HomeController> logger, ICadUsuarioRepositor
     [HttpGet("buscar")]
     public async Task<IActionResult> GetUsuariosAsync(CancellationToken cancellationToken)
     {
-        var users = await cadUsuarioRepository.GetAsync();
+        var users = await cadUsuarioRepository.GetAsync(cancellationToken);
         return Ok(users);
     }
 
     [HttpPost]
-    public async Task<IActionResult> CriarUsuariosAsync([FromBody] UpsertRequestViewModel requestViewModel)
+    public async Task<IActionResult> CriarUsuariosAsync([FromBody] UpsertRequestViewModel requestViewModel, CancellationToken cancellationToken)
     {
         try
         {
@@ -23,7 +23,7 @@ public class HomeController(ILogger<HomeController> logger, ICadUsuarioRepositor
                 requestViewModel.Email,
                 HashPassword.Create(requestViewModel.Senha));
 
-            await cadUsuarioRepository.CreateAsync(entity);
+            await cadUsuarioRepository.CreateAsync(entity, cancellationToken);
 
             return Ok(new { message = "Cadastro feito com sucesso!" });
         }
@@ -35,14 +35,14 @@ public class HomeController(ILogger<HomeController> logger, ICadUsuarioRepositor
     }
 
     [HttpPut]
-    public async Task<IActionResult> AtualizarUsuarioAsync([FromBody] UpsertRequestViewModel requestViewModel)
+    public async Task<IActionResult> AtualizarUsuarioAsync([FromBody] UpsertRequestViewModel requestViewModel, CancellationToken cancellationToken)
     {
         try
         {
-            var entity = await cadUsuarioRepository.GetAsync(id: requestViewModel.Id.Value);
+            var entity = await cadUsuarioRepository.GetAsync(id: requestViewModel.Id.Value, cancellationToken);
             entity.Update(requestViewModel.Nome, requestViewModel.Email, HashPassword.Create(requestViewModel.Senha));
 
-            await cadUsuarioRepository.UpdateAsync(requestViewModel.Id.Value, entity);
+            await cadUsuarioRepository.UpdateAsync(requestViewModel.Id.Value, entity, cancellationToken);
 
             return Ok(new { message = "Cadastro editado com sucesso!" });
         }
@@ -54,11 +54,11 @@ public class HomeController(ILogger<HomeController> logger, ICadUsuarioRepositor
     }
 
     [HttpDelete, Route("{id}")]
-    public async Task<IActionResult> DeleteUsuarioAsync(Guid id)
+    public async Task<IActionResult> DeleteUsuarioAsync(Guid id, CancellationToken cancellationToken)
     {
         try
         {
-            await cadUsuarioRepository.DeleteAsync(id: id);
+            await cadUsuarioRepository.DeleteAsync(id: id, cancellationToken);
             return Ok(new { message = "Cadastro removido com sucesso!" });
         }
         catch (Exception ex)
