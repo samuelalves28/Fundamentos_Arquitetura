@@ -13,7 +13,8 @@ superclasses. Temos um exemplo "Se nada como um pato, voa como pato porém preci
 problema de abstração", ou seja, se tentamos um pato de brinquedo que herdar de um pato real, e se quisermos substituir 
 pela a classe que herdamos não conseguimos, pois o pato de brinquedo precisa de baterias para funcionar.	
 
-I -> Interface Segregation Principle: 
+I -> Interface Segregation Principle (ISP): Classes não devem depender de métodos que não usam. Muitas interfaces específicas
+são melhores do que uma interface unica.
 
 D -> Dependency Inversion Principle: 
 
@@ -38,19 +39,24 @@ O que os princípios do SOLID fazem para nos ajudar a evitar problemas comuns:
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
-QESTÃO 1: Qual alternativa NÃO está correta em relação ao SRP?
+QUESTÃO 1: Qual alternativa NÃO está correta em relação ao SRP?
 
 - O SRP afirma que uma classe deve ter uma única razão para mudar, ou seja, ela deve ser responsável apenas por uma parte 
 específica da funcionalidade de um sistema. Isso não significa que a classe tenha apenas um método, mas que todos os métodos
 e funcionalidades dentro dela devem estar relacionados à mesma responsabilidade.
 
-QESTÃO 2: Como é possível aplicar o conceito de Open/Closed em uma classe?
+QUESTÃO 2: Como é possível aplicar o conceito de Open/Closed em uma classe?
 
 - Utilizando Extension Methods em classes independentes.
 - Criando super classes abstratas que são herdadas e especializadas pelas demais.
 - Fazendo uso de herança, abstração, encapsulamento e polimorfismo.
 
-QESTÃO 3: Qual o principal objetivo do LSP - Liskov Substitution Principle?
+QUESTÃO 3: Qual o principal objetivo do LSP - Liskov Substitution Principle?
 - Propor um critério para avaliar se a herança deve ser realizada ou não. O principal objetivo do LSP é questionar se o 
 desenvolvedor está realizando uma herança dentro dos padrões de design e abstração ou está apenas seguindo a linha do 
 "é um..". 
+
+QUESTÃO 4: Em relação ao ISP - Interface Segregation Principle, é correto afirmar que:
+- Clientes não devem ser forçados a depender de métodos que não usam.
+- Muitas interfaces específicas são melhores do que uma interface única.
+- Programe voltado à interface, não à implementação.
