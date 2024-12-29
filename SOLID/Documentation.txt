@@ -16,7 +16,8 @@ pela a classe que herdamos não conseguimos, pois o pato de brinquedo precisa de
 I -> Interface Segregation Principle (ISP): Classes não devem depender de métodos que não usam. Muitas interfaces específicas
 são melhores do que uma interface unica.
 
-D -> Dependency Inversion Principle: 
+D -> Dependency Inversion Principle: Módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender de abstrações. Abstrações não devem depender de
+detalhes. Detalhes devem depender de abstrações. Dependa de uma abstração e não de uma implementação.
 
 Os principios SOLID devem ser aplicados para se obter os benefícios da programação orientada a objetos. são eles:
 - Seja facil de se mantarm adptar, entender e ajustar às alterações do projeto. Pois a maior dor das aplicações hoje em dia é a
