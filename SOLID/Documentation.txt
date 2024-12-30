@@ -17,7 +17,8 @@ I -> Interface Segregation Principle (ISP): Classes não devem depender de méto
 são melhores do que uma interface unica.
 
 D -> Dependency Inversion Principle: Módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender de abstrações. Abstrações não devem depender de
-detalhes. Detalhes devem depender de abstrações. Dependa de uma abstração e não de uma implementação.
+detalhes. Detalhes devem depender de abstrações. Dependa de uma abstração e não de uma implementação. O Princípio da Inversão de Dependência (DIP - Dependency Inversion Principle)
+sugere que dependências de código devem ser invertidas, ou seja, módulos de alto nível não devem depender de módulos de baixo nível; ambos devem depender de abstrações.
 
 Os principios SOLID devem ser aplicados para se obter os benefícios da programação orientada a objetos. são eles:
 - Seja facil de se mantarm adptar, entender e ajustar às alterações do projeto.  Pois a maior dor das aplicações hoje em dia é a
@@ -61,3 +62,7 @@ QUESTÃO 4: Em relação ao ISP - Interface Segregation Principle, é correto af
 - Clientes não devem ser forçados a depender de métodos que não usam.
 - Muitas interfaces específicas são melhores do que uma interface única.
 - Programe voltado à interface, não à implementação.
+
+QUESTÃO 5: Em relação ao DIP - Dependency Inversion Principle, é correto afirmar que:
+- Um dos principais benefícios da injeção de dependência via construtor é a testabilidade do código. Um dos principais benefícios da injeção de dependência via construtor é, de fato, 
+a testabilidade do código. Isso porque facilita a injeção de dependências falsas (mocks) durante os testes unitários.
