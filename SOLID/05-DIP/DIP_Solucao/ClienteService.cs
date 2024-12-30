@@ -29,4 +29,3 @@ public class ClienteService(IClienteRepository clienteRepository, IEmailService 
         return "Cliente cadastrado com sucesso";
     }
 }
-
