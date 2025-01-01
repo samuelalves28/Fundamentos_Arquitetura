@@ -1,0 +1,9 @@
+﻿Operação Transient -> Uma nova instância do serviço é criada cada vez que ele é solicitado. Isso é útil para serviços leves e sem estado. Aqui ocupa mais memoria pois cria uma nova instância 
+a cada solicitação.
+
+Operação Scoped -> Uma nova instância do serviço é criada uma vez por solicitação. Isso é útil para serviços que mantêm algum estado por solicitação. Aqui o objeto é reutilizado durante a solicitação,
+isso e bom para perfomance pois não precisa criar uma nova instância, ele reutiliza a mesma instância.
+
+Operação Singleton -> Uma única instância do serviço é criada e compartilhada por toda a aplicação. Isso é útil para serviços que mantêm estado global.
+
+Operação SingletonInstance -> Uma instância específica do serviço é fornecida e compartilhada por toda a aplicação. Isso é útil quando você precisa compartilhar uma instância específica de um serviço.
