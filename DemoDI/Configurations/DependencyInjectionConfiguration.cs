@@ -33,6 +33,14 @@ public static class DependencyInjectionConfiguration
 
         #endregion
 
+
+        #region Generics
+
+        //Aqui podemos fazer também com que um repositorio especifico herde de um generico.
+        services.AddScoped(typeof(IGenericBaseRepository<>), typeof(GenericBaseRepository<>));
+
+        #endregion
+
         return services;
     }
 }

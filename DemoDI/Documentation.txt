@@ -7,3 +7,34 @@ isso e bom para perfomance pois não precisa criar uma nova instância, ele reut
 Operação Singleton -> Uma única instância do serviço é criada e compartilhada por toda a aplicação. Isso é útil para serviços que mantêm estado global.
 
 Operação SingletonInstance -> Uma instância específica do serviço é fornecida e compartilhada por toda a aplicação. Isso é útil quando você precisa compartilhar uma instância específica de um serviço.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Generic Repository 
+
+Quando trabalhamos com repositories genericos falamos que ele recebe qual quer tipo de classe, seja ela um cliente, produto, pedido entre outras, por isso que falamos 
+que IGenericRepository<T> where T : Class, pois ele aceita qualquer tipo de classe. E com isso podemos colocar qual quer tipo de função dentro dele e fazer com oque 
+ele herde em um repoisitorio generico também pois ele vai aceitar qualquer tipo de classe, e com isso fazendo as consultas no banco de acordo com oque foi implementado 
+na interface. 
+
+Com isso nós podemos reaproveitar o código para fazer heranças em repositorios especificos.
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+QUESTÃO 
+
+Quais prática deve ser evitada em relação ao uso de injeção de dependência?
+
+Aplicar o padrão Service Locator:
+O padrão Service Locator é considerado uma prática ruim porque quebra o princípio de inversão de controle (IoC), tornando o código mais acoplado e difícil de testar. 
+Em vez de injetar dependências explicitamente, o Service Locator exige que os componentes busquem suas dependências, o que reduz a clareza e a rastreabilidade.
+
+Utilizar Property Injection:
+Embora o Property Injection possa ser útil em alguns cenários específicos, ele deve ser usado com cuidado. Dependências injetadas via propriedades podem ser alteradas em
+tempo de execução, o que pode levar a inconsistências. Além disso, dificulta a garantia de que uma dependência está sempre disponível, já que ela pode não ser inicializada 
+corretamente.
+
+Resolver múltiplas classes para a mesma interface:
+A resolução de múltiplas implementações para uma mesma interface pode gerar ambiguidade e confusão no código. Embora seja possível configurar cenários em que diferentes 
+implementações sejam resolvidas com base em condições específicas, isso pode complicar a manutenção e aumentar o risco de erros.
