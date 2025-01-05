@@ -1,0 +1,105 @@
+﻿“Qualquer tolo pode escrever um código que um computador consiga entender. 
+Bons programadores escrevem código que humanos consigam entender.”
+
+- Martin Fowler
+
+“Um código limpo sempre parece que foi escrito por alguém que se importava”
+
+- Michael Feathers
+
+Se importar com um código é tomar cuidado na hora de:
+
+- Dar nomes;
+- Criar funções pequenas e especificas;
+- Não ser redundante;
+- Estar sempre atento a erros;
+- Não deixar de refatorar;
+- Utilizar testes limpos para validações.
+
+
+Oque é um código limpo?
+
+- Simples -> Seu código tem que fazer nada além do que ele foi desenvolvido para fazer.
+- Direto -> Ele tem que ser direto ao ponto, resolver isso com simplecidade.
+- Eficiente -> Tem que ser eficiente não só na escrita mas também ele tem que ser rápido.
+- Sem Duplicidade -> Não há motivos para duplicidade de código, isso chega ser um crime duplicar um código.
+- Elegante -> Ele tem que ser elgante, ele tem que ser bem escrito, tem que ter identação essas coisas.
+- Feito com cuidado -> A gente tem que fazer com cuidado, olhar os detalhes.
+- Fácil de ler -> Não adianta aplicar todas as arquiteturas sendo que o código fica dificil de ler, tem que construir ao que qual quer
+um pode entender.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+Desculpas que as pessoas mais usam para não usar um código limpo:
+
+- Mas o cronograma está apertado!
+- Meu chefe me pressiona a entregar logo!
+- Quero mostrar produtividade.
+- Não ganho o suficiente para escrever o melhor código!
+- A empresa não valoriza bom código e sim a entrega! 
+	- Isso aqui pode causar um problema pois se entregar um código rapido que funcione, no futuro aquele código pode dar algum problema.
+
+
+Como descobrir que um código está ruim?
+
+- Alta rotatividade.
+- Demora na entrega de novas funcionalidades.
+- Dificuldade e demora na manutenção do código.
+- Alta incidência de bugs.
+- Perda de confiança do cliente.
+- Desmotivação profissional.
+- Mais tempo depurando o código do que escrevendo.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Como posso saber que um código é um bom código?
+
+- Linhas de código -> Se tiver muita linha para algo simples quer dizer que o seu código está mal escrito.
+- Número de métodos -> Se uma classe tiver um método e tem muita responsabilidade podemos quebrar em varios métodos.
+- Número de classes -> Se uma aplicação tiver mais de uma classe dentro, quer dizer que ele não utilizou camadas ou arquivo procedurau.
+- Linhas de código por método -> Um método tem que ter um limite de linhas.
+- Complexidade ciclomática -> Isso é os If's dentro de If's, com issso pode levar a complexidade N^2.
+- Nomes Significativos -> Nós temos que escolher os nomes que revelam a intenção daquele código.
+	- Algumas dicas e se perguntar do "por que existe", "O que ele faz", "Como é usado".
+
+- Use nomes fáceis de se encontrar
+- Use nomes pronunciáveis
+- Evite siglas ou acrônimos
+- Não economize palavras
+- Revele a intenção do código
+- Evite palavras que podem ser variáveis ou palavras reservadasem outras plataformas
+- Evite dar nomes como "doubleValorPromocional", o tipo não precisa estar no nome
+- Evite trocadilhos, não misture idioma, não mescle nomes.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Boas Práticas
+
+- Nome de classes devem ser substantivos e não devem conter verbos. Ex: ClienteRepository.
+- Nomes de métodos devem conter verbos de preferência no infinitivo. Ex: AdicionarCliente.
+- Não seja genérico escreva os nomes do método que fala oque é realmente.
+
+- A primeira regra dos métodos é que eles devem ser pequenos. A segunda regra é que eles devem ser menores ainda."
+																									"Uncle Bob"
+ - Método <= 20 linhas
+ - Linha <= 100 caracteres
+ - Classe <= 500 linhas
+
+- Extraia trechos em métodos privados.
+- Métodos devem fazer apenas uma coisa, fazê-la certa e somente fazê-la.
+- Evite muitos parâmetros
+- Não deixe o método mentir dizendo que faz uma coisa e faz outras "escondidas"
+- Se o método tiver mais de uma responsabilidade extraia em dois ou mais.
+- Leia seu método de cima para baixo como uma narrativa, ele deve fazer sentido.
+- Aplique uma boa indentação.
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+Tratamento de erros
+
+- Tratar e prever possíveis exceções é de responsabilidade do desenvolvedor.
+- Retorne exceptions e não códigos de erro.
+- Informe o máximo que puder em sua exception
+- Se necessário crie exceptions personalizadas para um problema específico.
+- Não retorne null
+
+Regra dos escoteiros:
+"Deixe a área de acampamento mais limpa de como você a encontrou."
