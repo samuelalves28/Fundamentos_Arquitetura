@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SOLID", "SOLID\SOLID.csproj
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Dependency_Injection", "04 - Dependency_Injection", "{D5E387E0-3C6C-4619-A8DB-C5C1B4402DB6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoDI", "DemoDI\DemoDI.csproj", "{D1391B84-854E-4C29-BC44-E887388048D9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoDI", "DemoDI\DemoDI.csproj", "{D1391B84-854E-4C29-BC44-E887388048D9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - Clean_Code", "05 - Clean_Code", "{43EF9DFF-EDCB-4BF7-BF4A-C361FF52A5DB}"
 EndProject
@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Clean_Code", "Clean_Code\Cl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 - Desing_Patterns", "06 - Desing_Patterns", "{FBF30BE5-B5A9-411C-84D9-565B8093C370}"
 	ProjectSection(SolutionItems) = preProject
-		Clean_Code\Documentation.txt = Clean_Code\Documentation.txt
+		Documentation.txt = Documentation.txt
 	EndProjectSection
 EndProject
 Global

@@ -1,0 +1,13 @@
+﻿﻿Desing Patterns
+-> Desing patterns são padrões de código para soluç~ies de problemas comuns e que são conhecidos.
+-> O objetivo é não reinventar a roda e utilizar soluções com um bom desing de código.
+-> O conceito de padrões foi introduzido por 4 desenvolvedores intitulados "Gang of Four (GoF)" e hoje conta com 23 padrões.
+-> Atualmente existem mais de 80 padrões conhecidos que são em geral variantes dos 23 padrões do GoF.
+-> Os padrões são divididos em 3 categorias:
+	1. Criational (Criacional) -> Fornecem meios de criação de um objeto e de como ele será instanciado.
+	2. Structural (Estruturais) -> Tratam da composição de objetos por herança e interfaces para diferentes funcionalidades.
+	3. Behavioral (Comportamentais) -> Tratam das interações e comunicação entre os objetos além da divisão de responsabilidades.	
+Creational Patterns
+-> Abstract Factory -> Ele cria uma instâncias de diversas famílias de classes.
+-> Factory Method -> Ele cria uma instância de diversas derivações de classes.
+-> Singleton -> Ele cria uma única instância que será utilizada por os recusros.
