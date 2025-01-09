@@ -28,6 +28,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "06 - Desing_Patterns", "06 
 		Documentation.txt = Documentation.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesingPatterns", "DesingPatterns\DesingPatterns.csproj", "{5E2EEEED-850B-4010-A730-01B76F82C511}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +56,10 @@ Global
 		{C9B21956-E844-4544-AC50-68CB5E3FE66B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9B21956-E844-4544-AC50-68CB5E3FE66B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9B21956-E844-4544-AC50-68CB5E3FE66B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E2EEEED-850B-4010-A730-01B76F82C511}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E2EEEED-850B-4010-A730-01B76F82C511}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E2EEEED-850B-4010-A730-01B76F82C511}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E2EEEED-850B-4010-A730-01B76F82C511}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{9FEEE5BD-8963-469C-BB69-078D69E72C0A} = {4EA25385-60A2-4F1B-9161-F553641C15A1}
 		{D1391B84-854E-4C29-BC44-E887388048D9} = {D5E387E0-3C6C-4619-A8DB-C5C1B4402DB6}
 		{C9B21956-E844-4544-AC50-68CB5E3FE66B} = {43EF9DFF-EDCB-4BF7-BF4A-C361FF52A5DB}
+		{5E2EEEED-850B-4010-A730-01B76F82C511} = {FBF30BE5-B5A9-411C-84D9-565B8093C370}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B7819489-45FB-4381-8FF9-D7BCA94FB73E}
