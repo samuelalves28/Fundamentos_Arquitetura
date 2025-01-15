@@ -1,1 +1,27 @@
-﻿
+﻿O Abstract Factory é um padrão de projeto criacional que fornece uma interface para criar famílias de objetos relacionados ou dependentes, 
+sem especificar suas classes concretas. Ele é útil quando um sistema precisa ser independente de como seus objetos são criados e configurados.
+
+Estrutura do Diagrama
+
+Client (ExecucaoAbstractFactory)
+
+- É o ponto de entrada do sistema que interage com as fábricas abstratas e produtos abstratos.
+- Ele depende exclusivamente das interfaces definidas e não tem conhecimento das implementações concretas dos produtos ou fábricas.
+
+AbstractFactory (AutoSocorroFactory)
+
+- Define uma interface para a criação de objetos de tipos relacionados (ex.: CreateProductA(), CreateProductB()).
+- Possui métodos abstratos que as fábricas concretas implementarão.
+
+ConcreteFactory1 e ConcreteFactory2 (Fábricas Concretas)
+
+- Implementam a interface da AbstractFactory para criar instâncias concretas de produtos.
+- Cada fábrica concreta é responsável por criar objetos específicos para uma variante ou família de produtos.
+
+AbstractProductA e AbstractProductB (Guincho e Veiculo)
+
+- Definem interfaces para diferentes tipos de produtos que podem ser criados pelas fábricas.
+- ProductA1, ProductA2, ProductB1, ProductB2 (Produtos Concretos)
+
+São as implementações concretas das interfaces dos produtos abstratos.
+Cada produto concreto é criado por uma fábrica específica.
