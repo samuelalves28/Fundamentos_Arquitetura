@@ -1,4 +1,5 @@
 ﻿using DesingPatterns._01___Creational._1._1_Abstract_Factory;
+using DesingPatterns._01___Creational._1._2_Factory_Method;
 
 namespace DesingPatterns;
 
@@ -22,6 +23,8 @@ class Program
         Console.WriteLine("--------------------");
         Console.WriteLine("6 - Commad");
         Console.WriteLine("7 - Strategy");
+        Console.WriteLine("");
+        Console.Write("Escolha: ");
 
 
         var opcao = Console.ReadKey();
@@ -34,6 +37,9 @@ class Program
         {
             case '1':
                 ExecucaoAbstractFactory.Executar();
+                break;
+            case '2':
+                ExecucaoFactoryMethod.Executar();
                 break;
 
             default:

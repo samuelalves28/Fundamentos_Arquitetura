@@ -1,0 +1,42 @@
+﻿O Factory Method é um padrão de projeto criacional que fornece uma interface para criar objetos em uma superclasse, permitindo que as 
+subclasses alterem o tipo de objetos que serão criados. Ele promove o princípio da responsabilidade única, delegando a criação de 
+objetos para classes específicas.
+
+A estrutura representada no diagrama descreve os seguintes componentes do padrão Factory Method:
+
+Product (Produto)
+
+- Define a interface que todos os produtos concretos devem implementar.
+
+ConcreteProduct (Produto Concreto)
+
+- Implementa a interface do produto, representando o objeto concreto que será instanciado.
+
+Creator (Criador)
+
+- Declara o método fábrica (FactoryMethod) que retorna objetos do tipo Product.
+- Pode fornecer uma implementação padrão ou deixar que subclasses decidam qual produto criar.
+- Possui outros métodos, como AnOperation, que utiliza o produto criado pelo FactoryMethod.
+
+ConcreteCreator (Criador Concreto)
+
+- Sobrescreve o método fábrica (FactoryMethod) para retornar instâncias de ConcreteProduct.
+
+Funcionamento do Diagrama
+
+Definição do Produto:
+
+- O Product é a interface ou classe base que define a estrutura dos objetos criados.
+- O ConcreteProduct implementa essa interface e representa o objeto específico a ser instanciado.
+
+Método Fábrica:
+
+- O Creator define o método abstrato FactoryMethod, que é responsável pela criação dos produtos. No entanto, a responsabilidade da implementação fica para o ConcreteCreator.
+
+Operações no Criador:
+
+- O método AnOperation no Creator utiliza o produto criado pelo FactoryMethod. Este método permite que operações adicionais sejam realizadas no objeto criado sem alterar o código cliente.
+
+Implementação Concreta:
+
+- O ConcreteCreator sobrescreve o método FactoryMethod para instanciar e retornar um ConcreteProduct.
