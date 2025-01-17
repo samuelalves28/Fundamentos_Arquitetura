@@ -1,5 +1,6 @@
 ﻿using DesingPatterns._01___Creational._1._1_Abstract_Factory;
 using DesingPatterns._01___Creational._1._2_Factory_Method;
+using DesingPatterns._01___Creational._1._3_Singleton;
 
 namespace DesingPatterns;
 
@@ -41,7 +42,9 @@ class Program
             case '2':
                 ExecucaoFactoryMethod.Executar();
                 break;
-
+            case '3':
+                ExecucaoSingleton.Executar();
+                break;
             default:
                 break;
         }
