@@ -1,6 +1,7 @@
 ﻿using DesingPatterns._01___Creational._1._1_Abstract_Factory;
 using DesingPatterns._01___Creational._1._2_Factory_Method;
 using DesingPatterns._01___Creational._1._3_Singleton;
+using DesingPatterns._02___Structural._2._1_Adapter;
 
 namespace DesingPatterns;
 
@@ -44,6 +45,9 @@ class Program
                 break;
             case '3':
                 ExecucaoSingleton.Executar();
+                break;
+            case '4':
+                ExecuteAdapter.Executar();
                 break;
             default:
                 break;
