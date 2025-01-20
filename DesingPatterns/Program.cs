@@ -2,6 +2,7 @@
 using DesingPatterns._01___Creational._1._2_Factory_Method;
 using DesingPatterns._01___Creational._1._3_Singleton;
 using DesingPatterns._02___Structural._2._1_Adapter;
+using DesingPatterns._02___Structural._2._2_Facade;
 
 namespace DesingPatterns;
 
@@ -20,11 +21,13 @@ class Program
         Console.WriteLine("--------------------");
         Console.WriteLine("4 - Adapter");
         Console.WriteLine("5 - Facade");
+        Console.WriteLine("6 - Composie");
         Console.WriteLine("--------------------");
         Console.WriteLine("Behavioral Patterns ");
         Console.WriteLine("--------------------");
-        Console.WriteLine("6 - Commad");
-        Console.WriteLine("7 - Strategy");
+        Console.WriteLine("7 - Commad");
+        Console.WriteLine("8 - Strategy");
+        Console.WriteLine("9 - Observer");
         Console.WriteLine("");
         Console.Write("Escolha: ");
 
@@ -48,6 +51,9 @@ class Program
                 break;
             case '4':
                 ExecuteAdapter.Executar();
+                break;
+            case '5':
+                ExecuteFacade.Executar();
                 break;
             default:
                 break;
