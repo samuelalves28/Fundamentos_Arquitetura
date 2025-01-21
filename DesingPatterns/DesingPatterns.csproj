@@ -9,6 +9,8 @@
 
   <ItemGroup>
     <Folder Include="02 - Structural\2.2_Facade\Implementations\NovaPasta\" />
+    <Folder Include="03 - Behavioral\3.2_Strategy\" />
+    <Folder Include="03 - Behavioral\3.3_Observer\" />
   </ItemGroup>
 
 </Project>
