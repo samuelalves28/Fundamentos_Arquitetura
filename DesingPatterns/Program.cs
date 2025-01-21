@@ -5,6 +5,7 @@ using DesingPatterns._01___Creational._1._3_Singleton;
 using DesingPatterns._02___Structural._2._1_Adapter;
 using DesingPatterns._02___Structural._2._2_Facade;
 using DesingPatterns._02___Structural._2._3_Composite;
+using DesingPatterns._03___Behavioral._3._1_Command;
 
 namespace DesingPatterns;
 
@@ -59,6 +60,9 @@ class Program
                 break;
             case '6':
                 ExecuteComposite.Executar();
+                break;
+            case '7':
+                ExecuteCommand.Executar();
                 break;
             default:
                 break;
