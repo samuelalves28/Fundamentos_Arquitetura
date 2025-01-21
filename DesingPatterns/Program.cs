@@ -1,8 +1,10 @@
-﻿using DesingPatterns._01___Creational._1._1_Abstract_Factory;
+﻿using System.Text;
+using DesingPatterns._01___Creational._1._1_Abstract_Factory;
 using DesingPatterns._01___Creational._1._2_Factory_Method;
 using DesingPatterns._01___Creational._1._3_Singleton;
 using DesingPatterns._02___Structural._2._1_Adapter;
 using DesingPatterns._02___Structural._2._2_Facade;
+using DesingPatterns._02___Structural._2._3_Composite;
 
 namespace DesingPatterns;
 
@@ -54,6 +56,9 @@ class Program
                 break;
             case '5':
                 ExecuteFacade.Executar();
+                break;
+            case '6':
+                ExecuteComposite.Executar();
                 break;
             default:
                 break;

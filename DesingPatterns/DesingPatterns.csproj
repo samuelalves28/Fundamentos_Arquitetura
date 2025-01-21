@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="02 - Structural\2.2_Facade\Implementations\NovaPasta\" />
     <Folder Include="03 - Behavioral\" />
   </ItemGroup>
 
