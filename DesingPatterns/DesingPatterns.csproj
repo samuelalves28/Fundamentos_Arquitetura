@@ -8,8 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="02 - Structural\2.2_Facade\Implementations\NovaPasta\" />
-    <Folder Include="03 - Behavioral\3.2_Strategy\" />
+    <Compile Remove="02 - Structural\2.2_Facade\Implementations\NovaPasta\**" />
+    <EmbeddedResource Remove="02 - Structural\2.2_Facade\Implementations\NovaPasta\**" />
+    <None Remove="02 - Structural\2.2_Facade\Implementations\NovaPasta\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="03 - Behavioral\3.3_Observer\" />
   </ItemGroup>
 

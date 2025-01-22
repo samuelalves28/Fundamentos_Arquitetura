@@ -5,4 +5,5 @@ namespace DesingPatterns._02___Structural._2._2_Facade.Implementations.Interface
 public interface IPagamentoService
 {
     Pagamento RealizarPagamento(Pedido pedido);
+    Pagamento RealizarPagamento(Pedido pedido, Pagamento pagamento);
 }
