@@ -6,6 +6,7 @@ using DesingPatterns._02___Structural._2._1_Adapter;
 using DesingPatterns._02___Structural._2._2_Facade;
 using DesingPatterns._02___Structural._2._3_Composite;
 using DesingPatterns._03___Behavioral._3._1_Command;
+using DesingPatterns.Ordenacao;
 
 namespace DesingPatterns;
 
@@ -30,7 +31,9 @@ class Program
         Console.WriteLine("--------------------");
         Console.WriteLine("7 - Commad");
         Console.WriteLine("8 - Strategy");
-        Console.WriteLine("9 - Observer");
+        Console.WriteLine("--------------------");
+        Console.WriteLine("9 - Ordenação");
+
         Console.WriteLine("");
         Console.Write("Escolha: ");
 
@@ -63,6 +66,9 @@ class Program
                 break;
             case '7':
                 ExecuteCommand.Executar();
+                break;
+            case '9':
+                ExecucaoOrdenacao.Executar();
                 break;
             default:
                 break;
